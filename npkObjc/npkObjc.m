@@ -7,6 +7,7 @@
 //
 
 #import "npkObjc.h"
+#import "npk.h"
 
 @implementation npkObjc
 

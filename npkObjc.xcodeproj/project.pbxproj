@@ -7,9 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCA0D1CA1FA77A9C002D8D67 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA0D1C91FA77A9C002D8D67 /* Tests.m */; };
+		DCA0D1CC1FA77A9C002D8D67 /* libnpkObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE401561FA7689F0029D883 /* libnpkObjc.a */; };
+		DCB129AE1FA7837D00BD40BE /* tea.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129881FA7837D00BD40BE /* tea.c */; };
+		DCB129AF1FA7837D00BD40BE /* xxtea.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB1298B1FA7837D00BD40BE /* xxtea.c */; };
+		DCB129B01FA7837D00BD40BE /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB1298E1FA7837D00BD40BE /* adler32.c */; };
+		DCB129B11FA7837D00BD40BE /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB1298F1FA7837D00BD40BE /* compress.c */; };
+		DCB129B21FA7837D00BD40BE /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129901FA7837D00BD40BE /* crc32.c */; };
+		DCB129B31FA7837D00BD40BE /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129921FA7837D00BD40BE /* deflate.c */; };
+		DCB129B41FA7837D00BD40BE /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129941FA7837D00BD40BE /* infback.c */; };
+		DCB129B51FA7837D00BD40BE /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129951FA7837D00BD40BE /* inffast.c */; };
+		DCB129B61FA7837D00BD40BE /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129981FA7837D00BD40BE /* inflate.c */; };
+		DCB129B71FA7837D00BD40BE /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB1299A1FA7837D00BD40BE /* inftrees.c */; };
+		DCB129B81FA7837D00BD40BE /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB1299D1FA7837D00BD40BE /* trees.c */; };
+		DCB129B91FA7837D00BD40BE /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB1299F1FA7837D00BD40BE /* uncompr.c */; };
+		DCB129BA1FA7837D00BD40BE /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129A21FA7837D00BD40BE /* zutil.c */; };
+		DCB129BB1FA7837D00BD40BE /* npk.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129AB1FA7837D00BD40BE /* npk.c */; };
+		DCB129BC1FA7837D00BD40BE /* npk_common.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129AC1FA7837D00BD40BE /* npk_common.c */; };
+		DCB129BD1FA7837D00BD40BE /* npk_dev.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129AD1FA7837D00BD40BE /* npk_dev.c */; };
 		DCE4015B1FA7689F0029D883 /* npkObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE4015A1FA7689F0029D883 /* npkObjc.m */; };
 		DCE4015C1FA7689F0029D883 /* npkObjc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE401591FA7689F0029D883 /* npkObjc.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCA0D1CD1FA77A9C002D8D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE4014E1FA7689F0029D883 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE401551FA7689F0029D883;
+			remoteInfo = npkObjc;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		DCE401541FA7689F0029D883 /* CopyFiles */ = {
@@ -25,12 +53,57 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DCA0D1C71FA77A9C002D8D67 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA0D1C91FA77A9C002D8D67 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		DCA0D1CB1FA77A9C002D8D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB129881FA7837D00BD40BE /* tea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tea.c; sourceTree = "<group>"; };
+		DCB129891FA7837D00BD40BE /* tea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tea.h; sourceTree = "<group>"; };
+		DCB1298B1FA7837D00BD40BE /* xxtea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xxtea.c; sourceTree = "<group>"; };
+		DCB1298C1FA7837D00BD40BE /* xxtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxtea.h; sourceTree = "<group>"; };
+		DCB1298E1FA7837D00BD40BE /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		DCB1298F1FA7837D00BD40BE /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		DCB129901FA7837D00BD40BE /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		DCB129911FA7837D00BD40BE /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		DCB129921FA7837D00BD40BE /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		DCB129931FA7837D00BD40BE /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		DCB129941FA7837D00BD40BE /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		DCB129951FA7837D00BD40BE /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		DCB129961FA7837D00BD40BE /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		DCB129971FA7837D00BD40BE /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		DCB129981FA7837D00BD40BE /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		DCB129991FA7837D00BD40BE /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		DCB1299A1FA7837D00BD40BE /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		DCB1299B1FA7837D00BD40BE /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		DCB1299C1FA7837D00BD40BE /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		DCB1299D1FA7837D00BD40BE /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		DCB1299E1FA7837D00BD40BE /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		DCB1299F1FA7837D00BD40BE /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		DCB129A01FA7837D00BD40BE /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		DCB129A11FA7837D00BD40BE /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		DCB129A21FA7837D00BD40BE /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		DCB129A31FA7837D00BD40BE /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		DCB129A51FA7837D00BD40BE /* npk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = npk.h; sourceTree = "<group>"; };
+		DCB129A61FA7837D00BD40BE /* npk_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = npk_base.h; sourceTree = "<group>"; };
+		DCB129A71FA7837D00BD40BE /* npk_conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = npk_conf.h; sourceTree = "<group>"; };
+		DCB129A81FA7837D00BD40BE /* npk_dev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = npk_dev.h; sourceTree = "<group>"; };
+		DCB129A91FA7837D00BD40BE /* npk_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = npk_error.h; sourceTree = "<group>"; };
+		DCB129AB1FA7837D00BD40BE /* npk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = npk.c; sourceTree = "<group>"; };
+		DCB129AC1FA7837D00BD40BE /* npk_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = npk_common.c; sourceTree = "<group>"; };
+		DCB129AD1FA7837D00BD40BE /* npk_dev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = npk_dev.c; sourceTree = "<group>"; };
 		DCE401561FA7689F0029D883 /* libnpkObjc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnpkObjc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE401591FA7689F0029D883 /* npkObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = npkObjc.h; sourceTree = "<group>"; };
 		DCE4015A1FA7689F0029D883 /* npkObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = npkObjc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DCA0D1C41FA77A9C002D8D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA0D1CC1FA77A9C002D8D67 /* libnpkObjc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCE401531FA7689F0029D883 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +114,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCA0D1C81FA77A9C002D8D67 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCA0D1C91FA77A9C002D8D67 /* Tests.m */,
+				DCA0D1CB1FA77A9C002D8D67 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DCB129851FA7837D00BD40BE /* npklib */ = {
+			isa = PBXGroup;
+			children = (
+				DCB129861FA7837D00BD40BE /* external */,
+				DCB129A41FA7837D00BD40BE /* include */,
+				DCB129AA1FA7837D00BD40BE /* src */,
+			);
+			path = npklib;
+			sourceTree = "<group>";
+		};
+		DCB129861FA7837D00BD40BE /* external */ = {
+			isa = PBXGroup;
+			children = (
+				DCB129871FA7837D00BD40BE /* tea */,
+				DCB1298A1FA7837D00BD40BE /* xxtea */,
+				DCB1298D1FA7837D00BD40BE /* zlib */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		DCB129871FA7837D00BD40BE /* tea */ = {
+			isa = PBXGroup;
+			children = (
+				DCB129881FA7837D00BD40BE /* tea.c */,
+				DCB129891FA7837D00BD40BE /* tea.h */,
+			);
+			path = tea;
+			sourceTree = "<group>";
+		};
+		DCB1298A1FA7837D00BD40BE /* xxtea */ = {
+			isa = PBXGroup;
+			children = (
+				DCB1298B1FA7837D00BD40BE /* xxtea.c */,
+				DCB1298C1FA7837D00BD40BE /* xxtea.h */,
+			);
+			path = xxtea;
+			sourceTree = "<group>";
+		};
+		DCB1298D1FA7837D00BD40BE /* zlib */ = {
+			isa = PBXGroup;
+			children = (
+				DCB1298E1FA7837D00BD40BE /* adler32.c */,
+				DCB1298F1FA7837D00BD40BE /* compress.c */,
+				DCB129901FA7837D00BD40BE /* crc32.c */,
+				DCB129911FA7837D00BD40BE /* crc32.h */,
+				DCB129921FA7837D00BD40BE /* deflate.c */,
+				DCB129931FA7837D00BD40BE /* deflate.h */,
+				DCB129941FA7837D00BD40BE /* infback.c */,
+				DCB129951FA7837D00BD40BE /* inffast.c */,
+				DCB129961FA7837D00BD40BE /* inffast.h */,
+				DCB129971FA7837D00BD40BE /* inffixed.h */,
+				DCB129981FA7837D00BD40BE /* inflate.c */,
+				DCB129991FA7837D00BD40BE /* inflate.h */,
+				DCB1299A1FA7837D00BD40BE /* inftrees.c */,
+				DCB1299B1FA7837D00BD40BE /* inftrees.h */,
+				DCB1299C1FA7837D00BD40BE /* README */,
+				DCB1299D1FA7837D00BD40BE /* trees.c */,
+				DCB1299E1FA7837D00BD40BE /* trees.h */,
+				DCB1299F1FA7837D00BD40BE /* uncompr.c */,
+				DCB129A01FA7837D00BD40BE /* zconf.h */,
+				DCB129A11FA7837D00BD40BE /* zlib.h */,
+				DCB129A21FA7837D00BD40BE /* zutil.c */,
+				DCB129A31FA7837D00BD40BE /* zutil.h */,
+			);
+			path = zlib;
+			sourceTree = "<group>";
+		};
+		DCB129A41FA7837D00BD40BE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DCB129A51FA7837D00BD40BE /* npk.h */,
+				DCB129A61FA7837D00BD40BE /* npk_base.h */,
+				DCB129A71FA7837D00BD40BE /* npk_conf.h */,
+				DCB129A81FA7837D00BD40BE /* npk_dev.h */,
+				DCB129A91FA7837D00BD40BE /* npk_error.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		DCB129AA1FA7837D00BD40BE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DCB129AB1FA7837D00BD40BE /* npk.c */,
+				DCB129AC1FA7837D00BD40BE /* npk_common.c */,
+				DCB129AD1FA7837D00BD40BE /* npk_dev.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		DCE4014D1FA7689F0029D883 = {
 			isa = PBXGroup;
 			children = (
 				DCE401581FA7689F0029D883 /* npkObjc */,
+				DCA0D1C81FA77A9C002D8D67 /* Tests */,
 				DCE401571FA7689F0029D883 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				DCE401561FA7689F0029D883 /* libnpkObjc.a */,
+				DCA0D1C71FA77A9C002D8D67 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +233,7 @@
 		DCE401581FA7689F0029D883 /* npkObjc */ = {
 			isa = PBXGroup;
 			children = (
+				DCB129851FA7837D00BD40BE /* npklib */,
 				DCE401591FA7689F0029D883 /* npkObjc.h */,
 				DCE4015A1FA7689F0029D883 /* npkObjc.m */,
 			);
@@ -69,6 +243,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DCA0D1C61FA77A9C002D8D67 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCA0D1CF1FA77A9C002D8D67 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				DCA0D1C31FA77A9C002D8D67 /* Sources */,
+				DCA0D1C41FA77A9C002D8D67 /* Frameworks */,
+				DCA0D1C51FA77A9C002D8D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCA0D1CE1FA77A9C002D8D67 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = DCA0D1C71FA77A9C002D8D67 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DCE401551FA7689F0029D883 /* npkObjc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCE4015F1FA7689F0029D883 /* Build configuration list for PBXNativeTarget "npkObjc" */;
@@ -95,6 +287,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = pineoc;
 				TargetAttributes = {
+					DCA0D1C61FA77A9C002D8D67 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+					};
 					DCE401551FA7689F0029D883 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
@@ -114,22 +310,95 @@
 			projectRoot = "";
 			targets = (
 				DCE401551FA7689F0029D883 /* npkObjc */,
+				DCA0D1C61FA77A9C002D8D67 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		DCA0D1C51FA77A9C002D8D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		DCA0D1C31FA77A9C002D8D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA0D1CA1FA77A9C002D8D67 /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCE401521FA7689F0029D883 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB129BB1FA7837D00BD40BE /* npk.c in Sources */,
+				DCB129B41FA7837D00BD40BE /* infback.c in Sources */,
+				DCB129AF1FA7837D00BD40BE /* xxtea.c in Sources */,
+				DCB129BA1FA7837D00BD40BE /* zutil.c in Sources */,
+				DCB129B91FA7837D00BD40BE /* uncompr.c in Sources */,
+				DCB129AE1FA7837D00BD40BE /* tea.c in Sources */,
+				DCB129B81FA7837D00BD40BE /* trees.c in Sources */,
+				DCB129B31FA7837D00BD40BE /* deflate.c in Sources */,
 				DCE4015B1FA7689F0029D883 /* npkObjc.m in Sources */,
+				DCB129B21FA7837D00BD40BE /* crc32.c in Sources */,
+				DCB129B01FA7837D00BD40BE /* adler32.c in Sources */,
+				DCB129B11FA7837D00BD40BE /* compress.c in Sources */,
+				DCB129BD1FA7837D00BD40BE /* npk_dev.c in Sources */,
+				DCB129B51FA7837D00BD40BE /* inffast.c in Sources */,
+				DCB129B71FA7837D00BD40BE /* inftrees.c in Sources */,
+				DCB129BC1FA7837D00BD40BE /* npk_common.c in Sources */,
+				DCB129B61FA7837D00BD40BE /* inflate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DCA0D1CE1FA77A9C002D8D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE401551FA7689F0029D883 /* npkObjc */;
+			targetProxy = DCA0D1CD1FA77A9C002D8D67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DCA0D1D01FA77A9C002D8D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineoc.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCA0D1D11FA77A9C002D8D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pineoc.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DCE4015D1FA7689F0029D883 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -237,28 +506,48 @@
 		DCE401601FA7689F0029D883 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/**";
 			};
 			name = Debug;
 		};
 		DCE401611FA7689F0029D883 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/**";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DCA0D1CF1FA77A9C002D8D67 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA0D1D01FA77A9C002D8D67 /* Debug */,
+				DCA0D1D11FA77A9C002D8D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCE401511FA7689F0029D883 /* Build configuration list for PBXProject "npkObjc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
