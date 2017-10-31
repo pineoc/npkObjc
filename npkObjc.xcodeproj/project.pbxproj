@@ -25,6 +25,10 @@
 		DCB129BB1FA7837D00BD40BE /* npk.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129AB1FA7837D00BD40BE /* npk.c */; };
 		DCB129BC1FA7837D00BD40BE /* npk_common.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129AC1FA7837D00BD40BE /* npk_common.c */; };
 		DCB129BD1FA7837D00BD40BE /* npk_dev.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129AD1FA7837D00BD40BE /* npk_dev.c */; };
+		DCB129C31FA812ED00BD40BE /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129BE1FA812ED00BD40BE /* gzwrite.c */; };
+		DCB129C41FA812ED00BD40BE /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129C01FA812ED00BD40BE /* gzlib.c */; };
+		DCB129C51FA812ED00BD40BE /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129C11FA812ED00BD40BE /* gzclose.c */; };
+		DCB129C61FA812ED00BD40BE /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129C21FA812ED00BD40BE /* gzread.c */; };
 		DCE4015B1FA7689F0029D883 /* npkObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE4015A1FA7689F0029D883 /* npkObjc.m */; };
 		DCE4015C1FA7689F0029D883 /* npkObjc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE401591FA7689F0029D883 /* npkObjc.h */; };
 /* End PBXBuildFile section */
@@ -90,6 +94,11 @@
 		DCB129AB1FA7837D00BD40BE /* npk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = npk.c; sourceTree = "<group>"; };
 		DCB129AC1FA7837D00BD40BE /* npk_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = npk_common.c; sourceTree = "<group>"; };
 		DCB129AD1FA7837D00BD40BE /* npk_dev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = npk_dev.c; sourceTree = "<group>"; };
+		DCB129BE1FA812ED00BD40BE /* gzwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzwrite.c; sourceTree = "<group>"; };
+		DCB129BF1FA812ED00BD40BE /* gzguts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzguts.h; sourceTree = "<group>"; };
+		DCB129C01FA812ED00BD40BE /* gzlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzlib.c; sourceTree = "<group>"; };
+		DCB129C11FA812ED00BD40BE /* gzclose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzclose.c; sourceTree = "<group>"; };
+		DCB129C21FA812ED00BD40BE /* gzread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzread.c; sourceTree = "<group>"; };
 		DCE401561FA7689F0029D883 /* libnpkObjc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnpkObjc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE401591FA7689F0029D883 /* npkObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = npkObjc.h; sourceTree = "<group>"; };
 		DCE4015A1FA7689F0029D883 /* npkObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = npkObjc.m; sourceTree = "<group>"; };
@@ -164,6 +173,11 @@
 		DCB1298D1FA7837D00BD40BE /* zlib */ = {
 			isa = PBXGroup;
 			children = (
+				DCB129C11FA812ED00BD40BE /* gzclose.c */,
+				DCB129BF1FA812ED00BD40BE /* gzguts.h */,
+				DCB129C01FA812ED00BD40BE /* gzlib.c */,
+				DCB129C21FA812ED00BD40BE /* gzread.c */,
+				DCB129BE1FA812ED00BD40BE /* gzwrite.c */,
 				DCB1298E1FA7837D00BD40BE /* adler32.c */,
 				DCB1298F1FA7837D00BD40BE /* compress.c */,
 				DCB129901FA7837D00BD40BE /* crc32.c */,
@@ -346,14 +360,18 @@
 				DCB129AE1FA7837D00BD40BE /* tea.c in Sources */,
 				DCB129B81FA7837D00BD40BE /* trees.c in Sources */,
 				DCB129B31FA7837D00BD40BE /* deflate.c in Sources */,
+				DCB129C61FA812ED00BD40BE /* gzread.c in Sources */,
 				DCE4015B1FA7689F0029D883 /* npkObjc.m in Sources */,
 				DCB129B21FA7837D00BD40BE /* crc32.c in Sources */,
 				DCB129B01FA7837D00BD40BE /* adler32.c in Sources */,
 				DCB129B11FA7837D00BD40BE /* compress.c in Sources */,
+				DCB129C31FA812ED00BD40BE /* gzwrite.c in Sources */,
+				DCB129C51FA812ED00BD40BE /* gzclose.c in Sources */,
 				DCB129BD1FA7837D00BD40BE /* npk_dev.c in Sources */,
 				DCB129B51FA7837D00BD40BE /* inffast.c in Sources */,
 				DCB129B71FA7837D00BD40BE /* inftrees.c in Sources */,
 				DCB129BC1FA7837D00BD40BE /* npk_common.c in Sources */,
+				DCB129C41FA812ED00BD40BE /* gzlib.c in Sources */,
 				DCB129B61FA7837D00BD40BE /* inflate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
