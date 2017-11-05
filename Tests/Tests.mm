@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "npkObjc.h"
 
 @interface Tests : XCTestCase
 
@@ -34,6 +35,24 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testNPK {
+    npkObjc* npk = [npkObjc alloc];
+    NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
+    NSString* npkFilePath = [bundlePath stringByAppendingPathComponent:@"foo.npk"];
+    NSString* textFilePath = [bundlePath stringByAppendingPathComponent:@"text1"];
+    
+    XCTAssertNotNil(npkFilePath);
+    XCTAssertNotNil(textFilePath);
+    
+    NSArray* npkKey = @[@1, @2, @3, @4];
+    
+    NSData* unpackData = [npk unpackNPKfile:npkFilePath filename:@"text1" npkKey:npkKey];
+    
+    NSData* textData = [NSData dataWithContentsOfFile: textFilePath];
+    
+    XCTAssertFalse(unpackData == textData);
 }
 
 @end

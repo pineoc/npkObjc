@@ -10,4 +10,6 @@
 
 @interface npkObjc : NSObject
 
+-(NSData*) unpackNPKfile:(NSString*) url filename: (NSString*) file npkKey:(NSArray*) npkKey;
+
 @end
