@@ -11,7 +11,7 @@
 
 @implementation npkObjc
 
--(NSData*) unpackNPKfile:(NSString*) url filename: (NSString*) file npkKey:(NSArray*) npkKey;
+-(NSData*) exportFromNPKFile:(NSString*) url filename: (NSString*) file npkKey:(NSArray*) npkKey;
 {
     if([[url lastPathComponent] length] == 0)
     {
@@ -25,7 +25,7 @@
     
     // npk key value setting
     int count = [npkKey count];
-    for (int i=0; i < count; i++)
+    for (int i = 0; i < count; i++)
     {
         key[i] = [[npkKey objectAtIndex:i] intValue];
     }

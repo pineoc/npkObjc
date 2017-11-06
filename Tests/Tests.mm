@@ -38,21 +38,29 @@
 }
 
 - (void)testNPK {
+    // test file foo.npk
+    // foo.npk {text1, test_img.jpg, key: [1,2,3,4]}
+    
     npkObjc* npk = [npkObjc alloc];
     NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
     NSString* npkFilePath = [bundlePath stringByAppendingPathComponent:@"foo.npk"];
     NSString* textFilePath = [bundlePath stringByAppendingPathComponent:@"text1"];
+    NSString* imageFilePath = [bundlePath stringByAppendingPathComponent:@"test_img.jpg"];
     
     XCTAssertNotNil(npkFilePath);
     XCTAssertNotNil(textFilePath);
     
     NSArray* npkKey = @[@1, @2, @3, @4];
-    
-    NSData* unpackData = [npk unpackNPKfile:npkFilePath filename:@"text1" npkKey:npkKey];
-    
+    NSData* unpackData = [npk exportFromNPKFile:npkFilePath filename:@"text1" npkKey:npkKey];
     NSData* textData = [NSData dataWithContentsOfFile: textFilePath];
     
-    XCTAssertFalse(unpackData == textData);
+    XCTAssertNotEqual(unpackData, textData);
+    
+    NSData* unpackDataImage = [npk exportFromNPKFile:npkFilePath filename:@"test_img.jpg" npkKey:npkKey];
+    NSData* imageData = [NSData dataWithContentsOfFile:imageFilePath];
+    
+    XCTAssertNotEqual(unpackDataImage, imageData);
 }
+
 
 @end
