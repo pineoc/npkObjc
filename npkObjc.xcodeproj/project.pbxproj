@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC9F94B01FAF66CC00B42C14 /* foo.npk in Resources */ = {isa = PBXBuildFile; fileRef = DC9F94AA1FAF5E2A00B42C14 /* foo.npk */; };
-		DC9F94B11FAF66CC00B42C14 /* test_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC9F94AB1FAF5E2A00B42C14 /* test_img.jpg */; };
-		DC9F94B21FAF66CC00B42C14 /* text1 in Resources */ = {isa = PBXBuildFile; fileRef = DC9F94AC1FAF5E2A00B42C14 /* text1 */; };
+		DC78EE931FB3680C003C15A4 /* foo.npk in Resources */ = {isa = PBXBuildFile; fileRef = DC9F94AA1FAF5E2A00B42C14 /* foo.npk */; };
+		DC78EE941FB3680C003C15A4 /* test_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC9F94AB1FAF5E2A00B42C14 /* test_img.jpg */; };
+		DC78EE951FB3680C003C15A4 /* text1 in Resources */ = {isa = PBXBuildFile; fileRef = DC9F94AC1FAF5E2A00B42C14 /* text1 */; };
 		DCA0D1CA1FA77A9C002D8D67 /* Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = DCA0D1C91FA77A9C002D8D67 /* Tests.mm */; };
 		DCA0D1CC1FA77A9C002D8D67 /* libnpkObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE401561FA7689F0029D883 /* libnpkObjc.a */; };
 		DCB129AE1FA7837D00BD40BE /* tea.c in Sources */ = {isa = PBXBuildFile; fileRef = DCB129881FA7837D00BD40BE /* tea.c */; };
@@ -351,9 +351,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC9F94B01FAF66CC00B42C14 /* foo.npk in Resources */,
-				DC9F94B11FAF66CC00B42C14 /* test_img.jpg in Resources */,
-				DC9F94B21FAF66CC00B42C14 /* text1 in Resources */,
+				DC78EE931FB3680C003C15A4 /* foo.npk in Resources */,
+				DC78EE941FB3680C003C15A4 /* test_img.jpg in Resources */,
+				DC78EE951FB3680C003C15A4 /* text1 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

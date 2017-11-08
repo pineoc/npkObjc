@@ -7,9 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "npk.h"
 
 @interface npkObjc : NSObject
-
--(NSData*) exportFromNPKFile:(NSString*) url filename: (NSString*) file npkKey:(NSArray*) npkKey;
+{
+    NSString* fileUrl;
+    NSArray* npkKeys;
+    NPK_PACKAGE npkPackage;
+}
+/**/
+-(npkObjc*) initWithNPKFile:(NSString*) url npkKey: (NSArray*) keys;
+/**/
+-(unsigned int) entityPackedSize:(NSString*) entityName;
+/**/
+-(unsigned int) entitySize:(NSString*) entityName;
+/**/
+-(NSData*) entityData:(NSString*) entityName;
+/**/
+-(NSData*) exportFromNPKFile:(NSString*) url filename: (NSString*) file npkKey:(NSArray*) keys;
 
 @end
